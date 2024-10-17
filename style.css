@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Hanken Grotesk", serif;
+  background-color: dimgray;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-container {
+  border: none;
+  outline: none;
+  color: hsl(241, 100%, 89%);
+  font-size: 15px;
+  height: 335px;
+  width: 240px;
+  border-radius: 20px;
+  background: linear-gradient(hsl(241, 100%, 64%), hsl(252, 81%, 45%));
+}
+.left-container p {
+  text-align: center;
+  font-weight: 500;
+  margin: 25px;
+}
+.circle {
+  font-size: 22px;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+  background: radial-gradient(hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+}
+.circle p,
+h1 {
+  position: relative;
+  top: 30px;
+}
+.circle span {
+  display: block;
+  font-size: 11px;
+  color: hsl(241, 100%, 89%);
+}
+.bottom h1 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 0;
+}
+.bottom p {
+  font-size: 11px;
+  margin: 40px;
+}
+.right-container {
+  height: 335px;
+  width: 240px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.right-container > p {
+  font-weight: bold;
+  font-size: 15px;
+  margin: 25px 0 20px 25px;
+  color: hsl(224, 30%, 27%);
+}
+.labels {
+  display: flex;
+  align-items: center;
+  width: 190px;
+  border-radius: 5px;
+  margin: 5px 25px;
+}
+.labels img {
+  margin-left: 10px;
+  width: 14px;
+}
+.labels p {
+  margin: 8px 0 8px 10px;
+  display: inline-block;
+  line-height: normal;
+  font-size: 12px;
+  font-weight: 500;
+}
+.flex-labels {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.reaction {
+  margin-top: 0px;
+  background-color: hsla(0, 100%, 67%, 0.1);
+  color: hsl(0, 100%, 67%);
+}
+.memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  color: hsl(39, 100%, 56%);
+}
+.verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  color: hsl(166, 100%, 37%);
+}
+.visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  color: hsl(234, 85%, 45%);
+}
+.meter > span {
+  color: grey;
+  margin-left: 5px;
+}
+.meter {
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+  font-size: 12px;
+  float: right;
+  padding-left: 50px; 
+}
+.verbals{
+  padding-left: 60px; 
+}
+.visuals{
+  padding-left: 60px; 
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  margin: 35px 25px;
+  width: 190px;
+  padding: 10px;
+  border-radius: 20px;
+  transition: all 0.5s ease-out;
+}
+button:hover,
+button:focus {
+  background: linear-gradient(hsl(241, 100%, 64%), hsl(252, 81%, 45%));
+}
+
+@media (width <= 480px){
+  body{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: red;
+  }
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}    
+.left-container{
+  height: 50vh;
+}
+.bottom p{
+  margin: 35px;
+
+}
+.right-container{
+  height: 50vh;
+}
+}
+
+@media (width <=375px){
+  body{
+    background-color: black;
+  }
+  .left-container{
+    width: 100vw;
+    height: 50vh;
+    border-radius: 0 0 25px 25px;
+  }
+  .left-container p{
+    margin: 15px;
+  }
+  .circle{
+    width: 135px;
+    height: 135px;
+  }
+  .bottom h1 {
+    font-size: 22px;
+    text-align: center;
+    position: absolute;
+    top: 33%;
+    left: 42%;
+    /* margin: 10px 10px; */
+  }
+  .bottom p {
+    font-size: 13px;
+    margin: 50px 65px;
+  }
+  .right-container{
+    height: 50vh;
+    width: 100vw;
+    border-radius: 25px 25px 25px 25px;
+  }
+  .right-container > p{
+    margin-left: 10vw;
+    font-size: 16px;
+  }
+  .labels {
+    align-items: center;
+    width: 80vw;
+    border-radius: 5px;
+    margin: 5px 25px;
+  }
+  .labels img {
+    margin-left: 10px;
+    width: 18px;
+  }
+  .labels p{
+    font-weight: 700;
+  }
+  .flex-labels {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  button{
+    margin: 20px 10vw;
+    width: 80vw;
+  }
+  .meter > span {
+    margin-left: 5px;
+  }
+  .meter {
+    /* overflow: hidden; */
+    display: flex;
+    /* align-items:center ; */
+    /* justify-content: center; */
+    /* flex-direction: row; */
+    line-height:0.1;
+    /* font-size: 12px; */
+    padding-left: 36vw; 
+  }
+  .verbals{
+    padding-left: 38vw; 
+
+  }
+  .visuals{
+    padding-left: 38.1vw; 
+
+  }
+
+}
